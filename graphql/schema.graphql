@@ -1,0 +1,21 @@
+type ClientEvent {
+  type: Int!
+}
+
+type ClientEventItem {
+  type: Int!
+}
+
+type ClientEventPage {
+  items: [ClientEventItem!]!
+  totalCount: Int!
+}
+
+type ClientPage {
+  totalCount: Int!
+}
+
+type Query {
+  clientEvents: ClientEventPage!
+  clients: ClientPage!
+}

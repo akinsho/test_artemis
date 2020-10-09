@@ -1,0 +1,7 @@
+query clientEvents {
+  clientEvents {
+    items {
+      type
+    }
+  }
+}
